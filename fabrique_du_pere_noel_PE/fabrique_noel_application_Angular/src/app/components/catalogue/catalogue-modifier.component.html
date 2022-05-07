@@ -1,0 +1,9 @@
+<h1 mat-dialog-title>Modifier le catalogue</h1>
+<mat-form-field>
+    <mat-label>Nouveau nom : </mat-label>
+    <input matInput [(ngModel)]="data.nom">
+</mat-form-field>
+<div mat-dialog-actions>
+    <button mat-button (click)="onNoClick()">No Thanks</button>
+    <button mat-button [mat-dialog-close]="data.nom"  cdkFocusInitial>Ok</button>
+  </div>
